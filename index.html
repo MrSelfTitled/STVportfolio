@@ -31,6 +31,32 @@ h1,h2{
     padding:20px;
     margin-top:20px;
 }
+    .gallery{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:15px;
+    margin-top:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border:2px dotted #e9e220;
+    margin:0;
+}
+
+@media (max-width:768px){
+    .gallery{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width:500px){
+    .gallery{
+        grid-template-columns:1fr;
+    }
+}
 
 a{
     color:#e9e220;
@@ -100,18 +126,20 @@ iframe{
     <div class="box">
         <h3>Secondary Sources</h3>
 
-        <img src="photos for website/photo 1.JPG" alt="Behind the scenes">
-        <img src="photos for website/photo 2.JPG" alt="Behind the scenes">
-        <img src="photos for website/photo 3.JPG" alt="Behind the scenes">
-        <img src="photos for website/photo 4.JPG" alt="Behind the scenes">
-        <img src="photos for website/photo 5.JPG" alt="Behind the scenes">
-        <img src="photos for website/photo 6.JPG" alt="Behind the scenes">
-        <img src="photos for website/photo 7.JPG" alt="Behind the scenes">
-        <img src="photos for website/photo 8.JPG" alt="Behind the scenes">
-        <img src="photos for website/photo 9.JPG" alt="Behind the scenes">
-        <img src="photos for website/photo 10.jpg" alt="Behind the scenes">
-        <img src="photos for website/photo 11.jpg" alt="Behind the scenes">
-        <img src="photos for website/photo 12.jpg" alt="Behind the scenes">
+      <div class="gallery">
+    <img src="photos for website/photo 1.JPG" alt="Behind the scenes">
+    <img src="photos for website/photo 2.JPG" alt="Behind the scenes">
+    <img src="photos for website/photo 3.JPG" alt="Behind the scenes">
+    <img src="photos for website/photo 4.JPG" alt="Behind the scenes">
+    <img src="photos for website/photo 5.JPG" alt="Behind the scenes">
+    <img src="photos for website/photo 6.JPG" alt="Behind the scenes">
+    <img src="photos for website/photo 7.JPG" alt="Behind the scenes">
+    <img src="photos for website/photo 8.JPG" alt="Behind the scenes">
+    <img src="photos for website/photo 9.JPG" alt="Behind the scenes">
+    <img src="photos for website/photo 10.jpg" alt="Behind the scenes">
+    <img src="photos for website/photo 11.jpg" alt="Behind the scenes">
+    <img src="photos for website/photo 12.jpg" alt="Behind the scenes">
+</div>
 
         <p>
             Behind-the-scenes photographs, production notes,
